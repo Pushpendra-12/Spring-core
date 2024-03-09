@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context= "http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="com.springCore.Collections.Employee" name="Emp1">
+        <property name="name" value="Smith"/>
+
+        <property name="phones">
+            <list>
+                    <value>123456</value>
+                    <value>546789</value>
+                    <value>457896</value>
+                    <null/>
+            </list>
+        </property>
+
+        <property name="Addresses">
+                <set>
+                        <value>America</value>
+                        <value>California</value>
+                        <value>NJ</value>
+                </set>
+        </property>
+
+        <property name="cources">
+            <map>
+                <entry key="Java" value="2 months"/>
+                <entry key="Spring Core" value="6 months"/>
+                <entry key="Spring MVC" value="8 months"/>
+
+            </map>
+        </property>
+    </bean>
+
+    <bean class="com.springCore.Collections.Employee" name="Emp2">
+        <property name="name" value="Martha"/>
+
+        <property name="phones">
+            <list>
+                <value>7991129583</value>
+                <value>9523884454</value>
+            </list>
+        </property>
+        <property name="Addresses">
+            <set>
+                <value>Germany</value>
+                <value>Japan</value>
+                <value>Spain</value>
+            </set>
+        </property>
+        <property name="cources">
+            <map>
+                <entry key="Machine Learning" value="3 months"/>
+                <entry key="Artificial Intelligence" value="2 months"/>
+            </map>
+        </property>
+    </bean>
+
+
+
+
+</beans>

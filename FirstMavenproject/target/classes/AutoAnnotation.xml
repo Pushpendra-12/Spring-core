@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config />
+
+
+
+    <bean class="com.springCore.Auto_Wire.Annotations.Address" name="address" >
+        <property name="street" value="St 17" />
+        <property name="city" value="Bihar" />
+    </bean>
+
+    <bean class="com.springCore.Auto_Wire.Annotations.Car" name="car" >
+        <property name="name" value="BMW" />
+        <property name="type" value="Luxury" />
+    </bean>
+
+    <bean class="com.springCore.Auto_Wire.Annotations.Car" name="car1" >
+        <property name="name" value="Tata" />
+        <property name="type" value="sedan" />
+    </bean>
+
+    <bean class="com.springCore.Auto_Wire.Annotations.Employee" name="emp1"  />
+
+</beans>

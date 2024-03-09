@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context= "http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.Student" name="student1">
+<!--        We can do it in a single line-->
+        <property name="StudentId" value="70" />
+<!--        <property name="StudentId">-->
+<!--            <value>1234</value>-->
+<!--        </property>-->
+        <property name="name" value="Pushpendra" />
+<!--        <property name="name">-->
+<!--            <value>Pushpendra</value>-->
+<!--        </property>-->
+        <property name="Address" value="Bihar"/>
+<!--        <property name="Address">-->
+<!--            <value>Bihar</value>-->
+<!--        </property>-->
+
+    </bean>
+<!--    this is second bean we can create many bean using this-->
+    <bean class="org.example.Student" name="student2">
+        <property name="StudentId" value="78" />
+
+        <property name="name" value="Rishu jha" />
+
+        <property name="Address" value="Kolkata"/>
+
+    </bean>
+
+    <bean class="org.example.Student" name = "student3">
+        <property name="StudentId" value="71"/>
+
+        <property name="name" value="Pushpit"/>
+
+        <property name="Address" value="Bihar"/>
+
+    </bean>
+
+
+
+
+</beans>

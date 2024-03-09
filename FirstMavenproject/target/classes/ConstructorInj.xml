@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context= "http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.springCore.ContructorInjection.Certi" name="cer">
+        <constructor-arg value="Business" />
+    </bean>
+    <bean class="com.springCore.ContructorInjection.Book" name="Book1">
+<!--        <constructor-arg>-->
+<!--            <value>01</value>-->
+<!--        </constructor-arg>-->
+<!--        We can do it in single line-->
+
+        <constructor-arg value="01"/>
+        <constructor-arg value="Psychology of money " />
+        <constructor-arg value="Morgan Housal" />
+        <constructor-arg ref="cer" />
+    </bean>
+</beans>
